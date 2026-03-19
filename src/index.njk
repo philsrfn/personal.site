@@ -1,0 +1,157 @@
+---
+layout: base.njk
+title: phil serafin
+---
+<h1 class="h1">phil serafin</h1>
+
+<p>telecom cs · deutsche telekom · münster, de</p>
+
+<hr>
+
+<h2 class="label">about</h2>
+
+<p>
+dual bachelor student in telekommunikationsinformatik
+at <a href="https://www.htwk-leipzig.de/">htwk leipzig</a>, working at
+<a href="https://www.telekom.de">deutsche telekom</a> in the
+ip-backbone team. i like networking, linux, and
+writing software that does one thing well.
+</p>
+<p>german (native) · english (c2)</p>
+
+<hr>
+
+<h2 class="label">work</h2>
+
+<div class="row">
+  <span class="hl col-title">dual student</span>
+  <span class="col-org">deutsche telekom</span>
+  <span class="col-date">oct 2024–present</span>
+</div>
+<p class="indent">ip-backbone team, münster. network engineering, cisco/juniper, core internet infrastructure.</p>
+
+<div class="row">
+  <span class="hl col-title">it assistant</span>
+  <span class="col-org">etamio gmbh</span>
+  <span class="col-date">2022–2024</span>
+</div>
+<p class="indent">digitization, pos systems. remote, part-time.</p>
+
+<hr>
+
+<h2 class="label">education</h2>
+
+<div class="row">
+  <span class="hl col-title">b.eng telecom cs</span>
+  <span class="col-org">htwk leipzig</span>
+  <span class="col-date">2024–2028</span>
+</div>
+<div class="row">
+  <span class="hl col-title">abitur (2.2)</span>
+  <span class="col-org">jkg ibbenbüren</span>
+  <span class="col-date">2022–2024</span>
+</div>
+<div class="row">
+  <span class="hl col-title">cambridge c2 english</span>
+  <span class="col-org">grade a</span>
+  <span class="col-date">2023</span>
+</div>
+
+<hr>
+
+<h2 class="label">projects</h2>
+<p class="right-link"><a href="https://github.com/philsrfn">github.com/philsrfn</a></p>
+
+<div class="row">
+  <span class="col-title"><a href="https://github.com/philsrfn/solarized-dots">solarized-dots</a></span>
+  <span class="col-desc">dotfiles, solarized rice</span>
+  <span class="col-lang">c</span>
+  <span class="col-extra">★ 6</span>
+</div>
+<div class="row">
+  <span class="col-title"><a href="https://github.com/philsrfn/smolwm">smolwm</a></span>
+  <span class="col-desc">tiny window manager</span>
+  <span class="col-lang">c</span>
+  <span class="col-extra"></span>
+</div>
+<div class="row">
+  <span class="col-title"><a href="https://github.com/philsrfn/cileserver">cileserver</a></span>
+  <span class="col-desc">file server</span>
+  <span class="col-lang">c</span>
+  <span class="col-extra"></span>
+</div>
+<div class="row">
+  <span class="col-title"><a href="https://github.com/philsrfn/gotext">gotext</a></span>
+  <span class="col-desc">chat app (go/react/postgres)</span>
+  <span class="col-lang">go</span>
+  <span class="col-extra"></span>
+</div>
+<div class="row">
+  <span class="col-title"><a href="https://github.com/philsrfn/aoc2024">aoc2024</a></span>
+  <span class="col-desc">advent of code 2024</span>
+  <span class="col-lang">python</span>
+  <span class="col-extra"></span>
+</div>
+<div class="row">
+  <span class="col-title"><a href="https://github.com/philsrfn/calendar_share">calendar_share</a></span>
+  <span class="col-desc">google calendar sync</span>
+  <span class="col-lang">python</span>
+  <span class="col-extra"></span>
+</div>
+
+<hr>
+
+<h2 class="label">skills</h2>
+
+<div class="row">
+  <span class="hl col-title">languages</span>
+  <span>python · java · c · go</span>
+</div>
+<div class="row">
+  <span class="hl col-title">networking</span>
+  <span>ip routing · dns · cisco ios · juniper</span>
+</div>
+<div class="row">
+  <span class="hl col-title">systems</span>
+  <span>linux · sysadmin · elasticsearch · kibana</span>
+</div>
+<div class="row">
+  <span class="hl col-title">other</span>
+  <span>agile · project management · git</span>
+</div>
+
+<hr>
+
+<h2 class="label">blog</h2>
+
+{% for post in collections.posts %}
+<div class="row">
+  <span class="col-title"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
+  <span class="col-date">{{ post.date | postDate }}</span>
+</div>
+{% endfor %}
+
+{% if collections.posts.length == 0 %}
+<p>no posts yet.</p>
+{% endif %}
+
+<hr>
+
+<h2 class="label">contact</h2>
+
+<div class="row">
+  <span class="hl col-title">mail</span>
+  <span><a href="mailto:philserafin@icloud.com">philserafin@icloud.com</a></span>
+</div>
+<div class="row">
+  <span class="hl col-title">linkedin</span>
+  <span><a href="https://linkedin.com/in/phil-serafin">linkedin.com/in/phil-serafin</a></span>
+</div>
+<div class="row">
+  <span class="hl col-title">github</span>
+  <span><a href="https://github.com/philsrfn">github.com/philsrfn</a></span>
+</div>
+<div class="row">
+  <span class="hl col-title">instagram</span>
+  <span><a href="https://instagram.com/philserafin">instagram.com/philserafin</a></span>
+</div>
