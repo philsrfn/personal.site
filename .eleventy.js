@@ -35,7 +35,6 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/personal.site/",
     dir: {
       input: "src",
       output: "_site",
